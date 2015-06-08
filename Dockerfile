@@ -1,5 +1,5 @@
 FROM mgcrea/supervisord-build:latest
-MAINTAINER Olivier Louvignes <olouvignes@carlipa.com>
+MAINTAINER Olivier Louvignes <olivier@mgcrea.io>
 
 # Install base packages
 RUN apt-get update \

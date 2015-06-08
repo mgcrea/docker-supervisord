@@ -1,13 +1,13 @@
 all: build
 
 build:
-	@docker build --tag=carlipa/supervisord:latest .
+	@docker build --tag=mgcrea/supervisord:latest .
 
 base:
 	@docker pull ubuntu:14.04
 
 rebuild: base
-	@docker build --tag=carlipa/supervisord:latest .
+	@docker build --tag=mgcrea/supervisord:latest .
 
 release: rebuild
-	@docker build --tag=carlipa/supervisord:14.04.$(shell date +%Y%m%d) .
+	@docker build --tag=mgcrea/supervisord:14.04.$(shell date +%Y%m%d) .
