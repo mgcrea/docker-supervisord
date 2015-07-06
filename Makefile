@@ -4,7 +4,7 @@ build:
 	@docker build --tag=mgcrea/supervisord:latest .
 
 base:
-	@docker pull ubuntu:14.04
+	@docker pull mgcrea/supervisord-build:latest
 
 rebuild: base
 	@docker build --tag=mgcrea/supervisord:latest .
